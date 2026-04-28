@@ -983,9 +983,11 @@ ul {
 }
 
 .spec-card-value {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #2d3748;
+  white-space: nowrap;
+  letter-spacing: -0.3px;
 }
 
 .price-block {
@@ -1324,7 +1326,7 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(16, 185, 129, 0.94);
+  background: rgba(16, 185, 129, 0.80);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   z-index: 0;
@@ -1718,7 +1720,7 @@ ul {
 /* Modal Styles */
 .modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); backdrop-filter: blur(8px); z-index: 9000; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: all 0.3s ease; }
 .modal.active { opacity: 1; visibility: visible; }
-.modal-content { background-color: var(--bg-primary); padding: 32px; border-radius: var(--radius-lg); position: relative; max-width: 90%; max-height: 90vh; overflow-y: auto; transform: scale(0.9); transition: all 0.3s ease; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+.modal-content { background-color: var(--bg-primary); padding: 32px; border-radius: var(--radius-lg); position: relative; width: 90%; max-width: 650px; max-height: 90vh; overflow-y: auto; transform: scale(0.9); transition: all 0.3s ease; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
 .modal.active .modal-content { transform: scale(1); }
 .close-modal { position: absolute; top: 16px; right: 24px; font-size: 2rem; color: var(--text-muted); cursor: pointer; transition: color 0.2s ease; line-height: 1; }
 .close-modal:hover { color: var(--green-primary); }

@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Merakit Pesan WhatsApp
       const destinationNumber = "6281181150666"; // Nomor WA CS
-      const message = `Halo, saya *${name}*. Saya ingin mendapatkan informasi lengkap dan pricelist untuk *Tipe ${houseType}* di Naira Lakeside. Nomor kontak saya: ${whatsapp}.`;
+      const message = `Halo, saya *${name}*. Saya ingin mendapatkan informasi lengkap dan pricelist untuk *Tipe ${houseType}* di Naira Lakeside.`;
       const encodedMessage = encodeURIComponent(message);
       const waUrl = `https://wa.me/${destinationNumber}?text=${encodedMessage}`;
 
@@ -298,26 +298,6 @@ document.addEventListener('DOMContentLoaded', () => {
      ======================================================================== */
   const houseData = [
     {
-      id: "alexandrina",
-      title: "Alexandrina",
-      badge: "Perfect Harmony",
-      badgeColor: "var(--gold-accent)",
-      image: "assets/FOTO RUMAH NAIRA LAKESIDE/RUMAH ALEXANDRINA.jpeg",
-      desc: "Keseimbangan sempurna antara estetika fasad modern dan fungsionalitas tata ruang keluarga yang flawless.",
-      specs: {
-        kamarTidur: "3",
-        kamarMandi: "2",
-        luasBangunan: "60",
-        luasTanah: "72",
-        carport: "1 Mobil"
-      },
-      hargaMulai: "1,2 Milyaran",
-      floorplans: [
-        { name: "Opsi A", url: "assets/FOTO RUMAH NAIRA LAKESIDE/DENAH-ALEXANDRINA-A-80.jpg" },
-        { name: "Opsi B", url: "assets/FOTO RUMAH NAIRA LAKESIDE/DENAH-ALEXANDRINA-B-80.jpg" }
-      ]
-    },
-    {
       id: "como",
       title: "Como",
       badge: "Compact & Warm",
@@ -325,16 +305,36 @@ document.addEventListener('DOMContentLoaded', () => {
       image: "assets/FOTO RUMAH NAIRA LAKESIDE/NAIRA_LAKE_VIEW_202604272121.jpeg",
       desc: "Desain cerdas yang memaksimalkan setiap metrik spasial dengan peleburan atmosfer kehangatan yang tak lekang oleh waktu.",
       specs: {
+        kamarTidur: "3 + Mezzanine",
+        kamarMandi: "2",
+        luasBangunan: "60",
+        luasTanah: "70",
+        carport: "2 Mobil"
+      },
+      hargaMulai: "1,3 M-an",
+      floorplans: [
+        { name: "Opsi A", url: "assets/FOTO RUMAH NAIRA LAKESIDE/DENAH-COMO-A-80.jpg" },
+        { name: "Opsi B", url: "assets/FOTO RUMAH NAIRA LAKESIDE/DENAH-COMO-B-80.jpg" }
+      ]
+    },
+    {
+      id: "alexandrina",
+      title: "Alexandrina",
+      badge: "Perfect Harmony",
+      badgeColor: "var(--gold-accent)",
+      image: "assets/FOTO RUMAH NAIRA LAKESIDE/RUMAH ALEXANDRINA.jpeg",
+      desc: "Keseimbangan sempurna antara estetika fasad modern dan fungsionalitas tata ruang keluarga yang flawless.",
+      specs: {
         kamarTidur: "2",
         kamarMandi: "2",
         luasBangunan: "50",
         luasTanah: "60",
-        carport: "1 Mobil"
+        carport: "2 Mobil"
       },
-      hargaMulai: "900 Jutaan",
+      hargaMulai: "1 M-an",
       floorplans: [
-        { name: "Opsi A", url: "assets/FOTO RUMAH NAIRA LAKESIDE/DENAH-COMO-A-80.jpg" },
-        { name: "Opsi B", url: "assets/FOTO RUMAH NAIRA LAKESIDE/DENAH-COMO-B-80.jpg" }
+        { name: "Opsi A", url: "assets/FOTO RUMAH NAIRA LAKESIDE/DENAH-ALEXANDRINA-A-80.jpg" },
+        { name: "Opsi B", url: "assets/FOTO RUMAH NAIRA LAKESIDE/DENAH-ALEXANDRINA-B-80.jpg" }
       ]
     },
     {
@@ -345,13 +345,13 @@ document.addEventListener('DOMContentLoaded', () => {
       image: "assets/FOTO RUMAH NAIRA LAKESIDE/NAIRA_2_1_Lantai_Lago_3_Edit_202604272133.jpeg",
       desc: "Puncak eksklusivitas. Menyuguhkan dimensi ruang yang spacious dan indah demi menjaga privasi serta kemewahan sejati.",
       specs: {
-        kamarTidur: "4",
-        kamarMandi: "3",
-        luasBangunan: "120",
-        luasTanah: "105",
-        carport: "2 Mobil"
+        kamarTidur: "2",
+        kamarMandi: "1",
+        luasBangunan: "35",
+        luasTanah: "60",
+        carport: "1 Mobil"
       },
-      hargaMulai: "2,1 Milyaran",
+      hargaMulai: "500 Jutaan",
       floorplans: [
         { name: "Denah Utama", url: "assets/FOTO RUMAH NAIRA LAKESIDE/NAIRA 2_Denah Type Lago November 2025 (1).jpg" }
       ]
