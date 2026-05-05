@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Memicu Meta Pixel / FB Ads Event Tracking (Opsional)
       if (typeof fbq === 'function') {
-        fbq('trackCustom', 'Lead_NairaResidence');
+        fbq('trackCustom', 'Lead - NL');
         console.log('FB Pixel Lead Event Fired');
       }
 
