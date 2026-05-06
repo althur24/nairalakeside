@@ -298,23 +298,22 @@ document.addEventListener('DOMContentLoaded', () => {
      ======================================================================== */
   const houseData = [
     {
-      id: "como",
-      title: "Como",
-      badge: "Compact & Warm",
-      badgeColor: "var(--green-primary)",
-      image: "assets/FOTO RUMAH NAIRA LAKESIDE/NAIRA_LAKE_VIEW_202604272121.jpeg",
-      desc: "Desain cerdas yang memaksimalkan setiap metrik spasial dengan peleburan atmosfer kehangatan yang tak lekang oleh waktu.",
+      id: "lago",
+      title: "Lago",
+      badge: "The Pinnacle of Luxury",
+      badgeColor: "var(--text-dark)",
+      image: "assets/FOTO RUMAH NAIRA LAKESIDE/NAIRA_2_1_Lantai_Lago_3_Edit_202604272133.jpeg",
+      desc: "Puncak eksklusivitas. Menyuguhkan dimensi ruang yang spacious dan indah demi menjaga privasi serta kemewahan sejati.",
       specs: {
-        kamarTidur: "3 + Mezzanine",
-        kamarMandi: "2",
-        luasBangunan: "60",
-        luasTanah: "70",
-        carport: "2 Mobil"
+        kamarTidur: "2",
+        kamarMandi: "1",
+        luasBangunan: "35",
+        luasTanah: "60",
+        carport: "1 Mobil"
       },
-      hargaMulai: "1,3 M-an",
+      hargaMulai: "500 Jutaan",
       floorplans: [
-        { name: "Opsi A", url: "assets/FOTO RUMAH NAIRA LAKESIDE/DENAH-COMO-A-80.jpg" },
-        { name: "Opsi B", url: "assets/FOTO RUMAH NAIRA LAKESIDE/DENAH-COMO-B-80.jpg" }
+        { name: "Denah Utama", url: "assets/FOTO RUMAH NAIRA LAKESIDE/NAIRA 2_Denah Type Lago November 2025 (1).jpg" }
       ]
     },
     {
@@ -338,22 +337,23 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     {
-      id: "lago",
-      title: "Lago",
-      badge: "The Pinnacle of Luxury",
-      badgeColor: "var(--text-dark)",
-      image: "assets/FOTO RUMAH NAIRA LAKESIDE/NAIRA_2_1_Lantai_Lago_3_Edit_202604272133.jpeg",
-      desc: "Puncak eksklusivitas. Menyuguhkan dimensi ruang yang spacious dan indah demi menjaga privasi serta kemewahan sejati.",
+      id: "como",
+      title: "Como",
+      badge: "Compact & Warm",
+      badgeColor: "var(--green-primary)",
+      image: "assets/FOTO RUMAH NAIRA LAKESIDE/NAIRA_LAKE_VIEW_202604272121.jpeg",
+      desc: "Desain cerdas yang memaksimalkan setiap metrik spasial dengan peleburan atmosfer kehangatan yang tak lekang oleh waktu.",
       specs: {
-        kamarTidur: "2",
-        kamarMandi: "1",
-        luasBangunan: "35",
-        luasTanah: "60",
-        carport: "1 Mobil"
+        kamarTidur: "3 + Mezzanine",
+        kamarMandi: "2",
+        luasBangunan: "60",
+        luasTanah: "70",
+        carport: "2 Mobil"
       },
-      hargaMulai: "500 Jutaan",
+      hargaMulai: "1,3 M-an",
       floorplans: [
-        { name: "Denah Utama", url: "assets/FOTO RUMAH NAIRA LAKESIDE/NAIRA 2_Denah Type Lago November 2025 (1).jpg" }
+        { name: "Opsi A", url: "assets/FOTO RUMAH NAIRA LAKESIDE/DENAH-COMO-A-80.jpg" },
+        { name: "Opsi B", url: "assets/FOTO RUMAH NAIRA LAKESIDE/DENAH-COMO-B-80.jpg" }
       ]
     }
   ];
@@ -377,21 +377,21 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="spec-grid-cards">
               <div class="spec-card-item">
                 <div class="spec-card-header">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
                   <span>KAMAR TIDUR</span>
                 </div>
                 <div class="spec-card-value">${item.specs.kamarTidur}</div>
               </div>
               <div class="spec-card-item">
                 <div class="spec-card-header">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
                   <span>KAMAR MANDI</span>
                 </div>
                 <div class="spec-card-value">${item.specs.kamarMandi}</div>
               </div>
               <div class="spec-card-item">
                 <div class="spec-card-header">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                   <span>LUAS BANGUNAN</span>
                 </div>
                 <div class="spec-card-value">${item.specs.luasBangunan}m&sup2;</div>
@@ -428,14 +428,32 @@ document.addEventListener('DOMContentLoaded', () => {
     
     livingContainer.innerHTML = htmlOutput;
     
-    // Sembunyikan indikator swipe saat user berinteraksi
+    // Sembunyikan indikator swipe saat user menyentuh kontainer
     const swipeIndicator = document.getElementById('swipe-indicator');
     if (swipeIndicator) {
-      livingContainer.addEventListener('scroll', () => {
+      livingContainer.addEventListener('touchstart', () => {
         if (!swipeIndicator.classList.contains('hidden')) {
           swipeIndicator.classList.add('hidden');
         }
-      }, { once: true });
+      }, { once: true, passive: true });
+
+      // Animasi Nudge (Sentuhan Halus) saat elemen masuk layar (khusus mobile)
+      if (window.innerWidth <= 1024) {
+        const nudgeObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                livingContainer.scrollBy({ left: 50, behavior: 'smooth' });
+                setTimeout(() => {
+                  livingContainer.scrollBy({ left: -50, behavior: 'smooth' });
+                }, 400);
+              }, 1200);
+              nudgeObserver.disconnect();
+            }
+          });
+        }, { threshold: 0.6 });
+        nudgeObserver.observe(livingContainer);
+      }
     }
 
     // Pastikan kartu yang baru di-render diobservasi oleh animasi

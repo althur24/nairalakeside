@@ -940,22 +940,22 @@ ul {
 .spec-grid-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-bottom: 24px;
+  gap: 8px;
+  margin-bottom: 20px;
 }
 
 .spec-card-item {
   background-color: var(--bg-primary);
   border: 1px solid rgba(0,0,0,0.05);
-  border-radius: 12px;
-  padding: 12px 16px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  border-radius: 10px;
+  padding: 10px 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .spec-card-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 
 /* Make Carport span 2 columns if it's the 5th item */
@@ -966,7 +966,7 @@ ul {
 .spec-card-header {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   color: #a0aec0; /* subtle gray */
   margin-bottom: 4px;
 }
@@ -976,28 +976,28 @@ ul {
 }
 
 .spec-card-header span {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
 .spec-card-value {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: #2d3748;
   white-space: nowrap;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.2px;
 }
 
 .price-block {
   background-color: #faf9f6; /* cream/warm gray */
-  border-radius: 12px;
-  padding: 16px;
+  border-radius: 10px;
+  padding: 12px;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   border: 1px solid rgba(0,0,0,0.03);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1792,32 +1792,40 @@ ul {
   /* Swipe Interaction Hint */
   .swipe-indicator {
     display: flex;
+    width: fit-content;
     align-items: center;
-    justify-content: flex-end;
-    gap: 6px;
-    color: var(--green-primary);
+    justify-content: center;
+    gap: 8px;
+    color: var(--green-dark);
     font-size: 0.85rem;
     font-weight: 600;
-    margin-bottom: 12px;
-    margin-right: 8px;
-    opacity: 0.8;
+    margin-bottom: 16px;
+    margin-left: auto;
+    background: rgba(32, 194, 93, 0.15);
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(32, 194, 93, 0.3);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     animation: swipe-bounce 2s infinite ease-in-out;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
   }
 
   .swipe-indicator.hidden {
     opacity: 0;
+    transform: translateY(-10px);
     pointer-events: none;
   }
 
   .swipe-icon {
     width: 18px;
     height: 18px;
+    stroke: var(--green-dark);
   }
 
   @keyframes swipe-bounce {
     0%, 100% { transform: translateX(0); }
-    50% { transform: translateX(-15px); }
+    50% { transform: translateX(10px); }
   }
 
   /* Swipeable Horizontal Cards for Mobile */
